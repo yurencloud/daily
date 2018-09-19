@@ -1,0 +1,13 @@
+{
+  "Author": "mack-wang",
+  "Repositories": [
+    {
+      "Title": "交易所前端",
+      "Path": "E: && cd \\code\\gitlab\\ex\\zt-out-exchange-static-pc"
+    },
+    {
+      "Title": "交易所管理后台",
+      "Path": "E: && cd \\code\\gitlab\\ex\\zt-out-exchange-static-admin"
+    }
+  ]
+}
