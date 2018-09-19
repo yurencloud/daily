@@ -1,7 +1,7 @@
 package main
 
 import (
-	"dailyReport/util"
+	"daily/util"
 	"encoding/json"
 	"flag"
 	"fmt"
