@@ -29,7 +29,9 @@ func main() {
 	layout := "Mon Jan 2"
 	now := time.Now()
 	var days []string
+	var title = "日报.txt"
 	if *isWeek {
+		title = "周报.txt"
 		for i := 0; i < 7; i++ {
 			ago, _ := time.ParseDuration("-" + strconv.Itoa(24*i) + "h")
 			days = append(days, now.Add(ago).Format(layout))
@@ -61,7 +63,7 @@ func main() {
 	results += "涉及日期：" + daysString + "\r\n"
 
 	for i, v := range config.Repositories {
-		results += "\r\n"+CN_NUMBER[i] + "、" + v.Title + "\r\n"
+		results += "\r\n" + CN_NUMBER[i] + "、" + v.Title + "\r\n"
 		f := 0
 		for _, today := range days {
 			logs, _ := util.Exec(v.Path + " && git log")
@@ -73,7 +75,9 @@ func main() {
 		}
 	}
 
-	ioutil.WriteFile("日报.txt", []byte(results), 0644)
+	fmt.Println(results)
+
+	ioutil.WriteFile(title, []byte(results), 0644)
 	if err != nil {
 		fmt.Println(err)
 	}
