@@ -8,6 +8,7 @@ import (
 	"io/ioutil"
 	"log"
 	"strconv"
+	"strings"
 	"time"
 )
 
@@ -69,8 +70,10 @@ func main() {
 			logs, _ := util.Exec(v.Path + " && git log")
 			res := util.Deal(config.Author, today, logs)
 			for _, each := range res {
-				f++
-				results += strconv.Itoa(f) + "." + each + "\r\n"
+				if !strings.Contains(each, "Merge") {
+					f++
+					results += strconv.Itoa(f) + "." + each + "\r\n"
+				}
 			}
 		}
 	}
