@@ -2,7 +2,7 @@
 支持 windows、mac、linux
 
 #### 下载使用
-
+[windows](https://github.com/yurencloud/daily/releases/download/v2.0.0/daily-windows.tar.gz) | [mac](https://github.com/yurencloud/daily/releases/download/v2.0.0/daily-mac.tar.gz) | [linux](https://github.com/yurencloud/daily/releases/download/v2.0.0/daily-linux.tar.gz)
 
 #### 更新日志
 1. 去除Merge日志
