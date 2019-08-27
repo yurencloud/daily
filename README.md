@@ -42,7 +42,7 @@
 Author：输入你的git username,会筛选出你所有的提交记录
 Exclude: 去除每条日志的前缀，支持自定义
 Repositories: 再输入项目切换路径即可
-> mac或linux用户请删除config.json文件，并将config.linux.json重命名成config.json
+
 ```
 {
   "Author": "mackwang",
@@ -63,4 +63,6 @@ Repositories: 再输入项目切换路径即可
   ]
 }
 ```
+
+
 > windows 下的`Path`要 类似这样 `E: && \\document\\code\\A`
