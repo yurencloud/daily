@@ -1,17 +1,18 @@
 {
   "Author": "mackwang",
+  "Exclude": ["fix:", "feat:", "update:", "add:"],
   "Repositories": [
     {
       "Title": "商家中心",
-      "Path": "cd /Users/wanglecheng/Documents/code/mr/web-admin-supplier"
+      "Path": "cd /Users/wanglecheng/Documents/code/A"
     },
     {
       "Title": "运营后台",
-      "Path": "cd /Users/wanglecheng/Documents/code/mr/web-admin-operation"
+      "Path": "cd /Users/wanglecheng/Documents/code/B"
     },
     {
       "Title": "商学院",
-      "Path": "cd /Users/wanglecheng/Documents/code/mr/web-admin-bizschool"
+      "Path": "cd /Users/wanglecheng/Documents/code/C"
     }
   ]
 }
